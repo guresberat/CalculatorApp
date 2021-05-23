@@ -5,8 +5,11 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var tvInput : TextView
 
     var lastNumeric: Boolean = false
     var lastDot: Boolean = false
@@ -14,23 +17,21 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        tvInput = findViewById<TextView>(R.id.tvInput)
     }
 
     fun onDigit(view: View) {
-        val tvInput = findViewById<TextView>(R.id.tvInput)
         tvInput.append((view as Button).text)
         lastNumeric = true
     }
 
     fun onClear(view: View) {
-        val tvInput = findViewById<TextView>(R.id.tvInput)
         tvInput.text = " "
         lastNumeric = false
         lastDot = false
     }
 
     fun onDecimalPoint(view: View) {
-        val tvInput = findViewById<TextView>(R.id.tvInput)
         if (lastNumeric && !lastDot) {
             tvInput.append(".")
             lastNumeric = false
@@ -39,7 +40,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onEqual(view: View) {
-        val tvInput = findViewById<TextView>(R.id.tvInput)
         if (lastNumeric) {
             var tvValue = tvInput.text.toString()
             var prefix = ""
@@ -98,7 +98,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onOperator(view: View) {
-        val tvInput = findViewById<TextView>(R.id.tvInput)
         if (lastNumeric && !isOperatorAdded(tvInput.text.toString()))
             tvInput.append((view as Button).text)
         lastNumeric = false
