@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">CalculatorApp</string>
+    <string name="app_name">MyCalculatorApp</string>
+    <string name="btnZeroText">0</string>
+    <string name="btnOneText">1</string>
+    <string name="btnTwoText">2</string>
+    <string name="btnThreeText">3</string>
+    <string name="btnFourText">4</string>
+    <string name="btnFiveText">5</string>
+    <string name="btnSixText">6</string>
+    <string name="btnSevenText">7</string>
+    <string name="btnEightText">8</string>
+    <string name="btnNineText">9</string>
+    <string name="btnMinusText">-</string>
+    <string name="btnAddText">+</string>
+    <string name="btnMultiplyText">*</string>
+    <string name="btnDivideText">/</string>
+    <string name="btnEqualText">=</string>
+    <string name="btnDecimalText">.</string>
+    <string name="btnClearText">Clear</string>
+
 </resources>
