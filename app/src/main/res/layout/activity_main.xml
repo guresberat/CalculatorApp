@@ -57,7 +57,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/btnDivideText"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
             android:layout_margin="3sp"
             tools:ignore="NestedWeights,UsingOnClickInXml"
             />
@@ -107,7 +107,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/btnMultiplyText"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
             android:layout_margin="3sp"
             tools:ignore="NestedWeights,UsingOnClickInXml"
             />
@@ -157,7 +157,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/btnMinusText"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
             android:layout_margin="3sp"
             tools:ignore="NestedWeights,UsingOnClickInXml"
             />
@@ -179,7 +179,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/btnDecimalText"
-            android:onClick="onDigit"
+            android:onClick="onDecimalPoint"
             android:layout_margin="3sp"
             tools:ignore="NestedWeights,UsingOnClickInXml" />
         <Button
@@ -207,7 +207,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/btnAddText"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
             android:layout_margin="3sp"
             tools:ignore="NestedWeights,UsingOnClickInXml"
             />
