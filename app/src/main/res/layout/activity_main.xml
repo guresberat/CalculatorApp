@@ -13,7 +13,10 @@
         android:layout_height="250sp"
         android:background="@color/white"
         android:textSize="48sp"
-        android:maxLength="12" />
+        android:maxLength="12"
+        android:padding="10sp"
+        android:text="0"
+        android:gravity="right|center_vertical|bottom"/>
 
     <!-- Row 1 -->
     
@@ -228,7 +231,8 @@
             android:id="@+id/btnEqual"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/btnEqualText"/>
+            android:text="@string/btnEqualText"
+            android:onClick="onEqual"/>
 
 
 </LinearLayout>
