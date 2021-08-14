@@ -1,6 +1,6 @@
 # CalculatorApp
 
-An app used for mathematical calculations.
+- An app used for mathematical calculations.
 
 Made this app to learn how to create ui and familiarize myself with xml files.
 
